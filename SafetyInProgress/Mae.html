@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<link rel="shortcut icon" href="/server.png">
+<link href="https://safetytrans.org/ios.png" rel="apple-touch-icon" />
+<link href="https://safetytrans.org/server2.png" rel="icon" sizes="192x192" />
+<link href="https://safetytrans.org/server1.png" rel="icon" sizes="128x128" />
+<link rel="mask-icon" href="https://safetytrans.org/ios.png">
+<meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name=apple-mobile-web-app-capable content=yes>
+            <meta name=apple-mobile-web-app-status-bar-style content=black>
+                <title>SafetyTrans</title>
+                <style>
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                #page {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border: 8px solid #FFF;
+                }
+                </style>
+                
+                <div id=page></div>
+                
+                <script>
+                    var page = document.getElementById('page'),
+                    ua = navigator.userAgent,
+                    iphone = ~ua.indexOf('iPhone') || ~ua.indexOf('iPod'),
+                    ipad = ~ua.indexOf('iPad'),
+                    ios = iphone || ipad,
+                    // Detect if this is running as a fullscreen app from the homescreen
+                    fullscreen = window.navigator.standalone,
+                    android = ~ua.indexOf('Android'),
+                    lastWidth = 0;
+                    
+                    if (android) {
+                        // Android's browser adds the scroll position to the innerHeight, just to
+                        // make this really fucking difficult. Thus, once we are scrolled, the
+                        // page height value needs to be corrected in case the page is loaded
+                        // when already scrolled down. The pageYOffset is of no use, since it always
+                        // returns 0 while the address bar is displayed.
+                        window.onscroll = function() {
+                            page.style.height = window.innerHeight + 'px'
+                        }
+                    }
+                var setupScroll = window.onload = function() {
+                    // Start out by adding the height of the location bar to the width, so that
+                    // we can scroll past it
+                    if (ios) {
+                        // iOS reliably returns the innerWindow size for documentElement.clientHeight
+                        // but window.innerHeight is sometimes the wrong value after rotating
+                        // the orientation
+                        var height = document.documentElement.clientHeight;
+                        // Only add extra padding to the height on iphone / ipod, since the ipad
+                        // browser doesn't scroll off the location bar.
+                        if (iphone && !fullscreen) height += 60;
+                        page.style.height = height + 'px';
+                    } else if (android) {
+                        // The stock Android browser has a location bar height of 56 pixels, but
+                        // this very likely could be broken in other Android browsers.
+                        page.style.height = (window.innerHeight + 56) + 'px'
+                    }
+                    // Scroll after a timeout, since iOS will scroll to the top of the page
+                    // after it fires the onload event
+                    setTimeout(scrollTo, 0, 0, 1);
+                };
+                (window.onresize = function() {
+                 var pageWidth = page.offsetWidth;
+                 // Android doesn't support orientation change, so check for when the width
+                 // changes to figure out when the orientation changes
+                 if (lastWidth == pageWidth) return;
+                 lastWidth = pageWidth;
+                 setupScroll();
+                 })();
+                    </script>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>SafetyTrans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+   
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109255292-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-109255292-1');
+    </script>
+   
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="preview">
+				<div class="inner">
+					<div class="content">
+						<h1>SafetyTrans</h1>
+						<h2>A safe place for transgender and questioning
+						individuals.</h2>
+					</div>
+					<a href="index.html" class="button hidden"><span>Let's Go</span></a>
+				</div>
+			</header>
+
+
+		<!-- Main -->
+			<div id="preview">
+				<div class="inner">
+					<div class="image fit">
+						<img src="images/pic05.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header>
+							<h2>Mae Tia Farris</h2>
+						</header>
+						<p>Hey I’m Mae Tia Farris I’m the server owner here not much to say about me I’m a lesbian I’m MtF I started HRT on 8/10/17 that's about all</p>
+						<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109255292-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-109255292-1');
+    </script>
+
+
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <h1 id="blob-pride-emojis">Blob Pride Emojis</h1>
+        
+        <h3 id="pride-blobs-sticker-pack-made-by-mae-tia-farris">Pride Blobs Sticker Pack made by Mae Tia Farris</h3>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/AppICON.png" alt="" title="AppIcon" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/Scan.PNG" alt="" title="QR Code" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><a href="https://itunes.apple.com/us/app/pride-blobs/id1272260229?mt=8"><img src="http://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg" alt="" title="Install" /></a></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/0.jpg" alt="" title="Preview 1" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/1.jpg" alt="" title="Preview 2" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/2.jpg" alt="" title="Preview 3" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/3.jpg" alt="" title="Preview 4" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAchilleanPride.png" alt="" title="BlobAchilleanPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobPolamoryPride.png" alt="" title="BlobPolamoryPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAgenderFluxPride.png" alt="" title="BlobAgenderFluxPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAgenderPride.png" alt="" title="BlobAgenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAmbonecPride.png" alt="" title="BlobAmbonecPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAndrogynePride.png" alt="" title="BlobAndrogynePride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAquarigenderPride.png" alt="" title="BlobAquarigenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobArofluxPride.png" alt="" title="BlobArofluxPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAromanticPride.png" alt="" title="BlobAromanticPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAsexualPride.png" alt="" title="BlobAsexualPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAutigenderPride.png" alt="" title="BlobAutigenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobBigenderPride.png" alt="" title="BlobBigenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobBisexualPride.png" alt="" title="BlobBisexualPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDemiboyPride.png" alt="" title="BlobDemiboyPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDemigirlPride.png" alt="" title="BlobDemiboyPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobLesbianPride.png" alt="" title="BlobLesbianPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobNonbinaryPride.png" alt="" title="BlobNonbinaryPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobPansexualPride.png" alt="" title="BlobPansexualPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobRainbowPride.png" alt="" title="BlobRainbowPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobRainbowPrideOldFlag.png" alt="" title="BlobRainbowPrideOldFlag" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobTrans.png" alt="" title="BlobTransgenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobBlackHawksTransPride.png" alt="" title="BlobBlackHawksTransPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobThinkingTrans.png" alt="" title="BlobThinkingTransgenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobGenderQuestioningPride.png" alt="" title="BlobGenderQuestioningPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobPolysexualPride.png" alt="" title="BlobPolysexualPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDemisexualPride.png" alt="" title="BlobDemisexualPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDemiagenderPride.png" alt="" title="BlobDemiagenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDeminonbinaryPride.png" alt="" title="BlobDeminonbinaryPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobMaveriquePride.png" alt="" title="BlobMaveriquePride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobNeurogenderPride.png" alt="" title="BlobNeurogenderPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobNeutroisPride.png" alt="" title="BlobNeutroisPride.png" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobSapphicPride.png" alt="" title="BlobSapphicPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobGenderfluidPride.png" alt="" title="BlobGenderfluidPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAsexualPanromanticPride.png" alt="" title="BlobAsexualPanromanticPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobAgenderAsexualPanromanticPride.png" alt="" title="BlobAgenderAsexualPanromanticPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobDemiRomanticPride.png" alt="" title="BlobDemiRomanticPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobHomoRomanticPride.png" alt="" title="BlobHomoRomanticPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobUSAPride.png" alt="" title="BlobUSAPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobSwitzerlandPride.png" alt="" title="BlobSwitzerlandPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobFrancePride.png" alt="" title="BlobFrancePride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobUnitedKingdomPride.png" alt="" title="BlobUnitedKingdomPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobCanadaPride.png" alt="" title="BlobCanadaPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobJapanPride.png" alt="" title="BlobJapanPride" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/BlobBlackHawksPride.png" alt="" title="BlobBlackHawksPride" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <h1 id="pride-blobs-v2">Pride Blobs V2</h1>
+        
+        <p><br /><br /><br /></p>
+        
+        <h3 id="prideheartblobs">PrideHeartBlobs</h3>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/AppICONv2.png" alt="" title="AppIcon V2" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/PrideBlobsV2.png" alt="" title="PrideBlobsV2" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><a href="https://itunes.apple.com/us/app/prideheartblobs/id1303116926?ls=1&amp;mt=8"><img src="http://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg" alt="" title="Install" /></a></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/en-US/1_iphone6plus.png" alt="" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/en-US/2_iphone6plus.png" alt="" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/en-US/3_iphone6plus.png" alt="" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/AppStorePreview/en-US/4_iphone6plus.png" alt="" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        <p><img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAchilleanHeart.png" alt="" title="BlobAchilleanHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAgenderFluxHeart.png" alt="" title="BlobAgenderFluxHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAgenderHeart.png" alt="" title="BlobAgenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAmbonecHeart.png" alt="" title="BlobAmbonecHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAndrogyneHeart.png" alt="" title="BlobAndrogyneHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAquarigenderHeart.png" alt="" title="BlobAquarigenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAroFluxHeart.png" alt="" title="BlobAroFluxHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAromanticHeart.png" alt="" title="BlobAromanticHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAsexualHeart.png" alt="" title="BlobAsexualHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAutigenderHeart.png" alt="" title="BlobAutigenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobAutisticHeart.png" alt="" title="BlobAutisticHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobBigenderHeart.png" alt="" title="BlobBigenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobBisexualHeart.png" alt="" title="BlobBisexualHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemiBoyHeart.png" alt="" title="BlobDemiBoyHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobGayHeart.png" alt="" title="BlobGayHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobLesbianHeart.png" alt="" title="BlobLesbianHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobPansexualHeart.png" alt="" title="BlobPansexualHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobTransgenderLoveHeart.png" alt="" title="BlobTransgenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemienbyHeart.png" alt="" title="BlobDemienbyHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemiGenderHeart.png" alt="" title="BlobDemiGenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemiGirlHeart.png" alt="" title="BlobDemiGirlHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemiromanticHeart.png" alt="" title="BlobDemiromanticHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDemisexualHeart.png" alt="" title="BlobDemisexualHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobDiamoricHeart.png" alt="" title="BlobDiamoricHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobGenderQuestioningHeart.png" alt="" title="BlobGenderQuestioningHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobGenderFluidHeart.png" alt="" title="BlobGenderFluidHeart" />
+        <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobGenderFluxHeart.png" alt="" title="BlobGenderFluxHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobGenderQueerHeart.png" alt="" title="BlobGenderQueerHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobIntergenderHeart.png" alt="" title="BlobIntergenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobIntersexHeart.png" alt="" title="BlobIntersexHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobMaveriqueHeart.png" alt="" title="BlobMaveriqueHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobNeurogenderHeart.png" alt="" title="BlobNeurogenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobNeutroisHeart.png" alt="" title="BlobNeutroisHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobNonbinaryHeart.png" alt="" title="BlobNonbinaryHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobPolyamoryHeart.png" alt="" title="BlobPolyamoryHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobPolysexualHeart.png" alt="" title="BlobPolysexualHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobSapphicHeart.png" alt="" title="BlobSapphicHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobTriGenderHeart.png" alt="" title="BlobTriGenderHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobNonbinaryGirlHeart.png" alt="" title="BlobNonbinaryGirlHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobNonbinaryBoyHeart.png" alt="" title="BlobNonbinaryBoyHeart" /> <img src="https://github.com/kmddd59/emojis/raw/master/blob%20Emojis/Blob%20Flag/Pride_Blob_v2/BlobRainbowDisabilityHeart.png" alt="" title="BlobRainbowDisabilityHeart" /></p>
+        
+        <p><br /><br /><br /></p>
+        
+        
+    </section>
+</div>
+
+					</div>
+				</div>
+				<a href="Allison.html" class="nav previous"><span class="fa fa-chevron-left"></span></a>
+				<a href="Avery.html" class="nav next"><span class="fa fa-chevron-right"></span></a>
+			</div>
+
+      <!-- Footer -->
+      <footer id="footer">
+          <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+          <div class="inner">
+              <div class="content">
+                  <h3>Server Rules</h3>
+                  <p>1. No spamming.
+                  <br>
+                  2. No DM advertising. This counts as harassment.
+                  <br>
+                  3. No gore/nsfw content in non-nsfw marked channels.
+                  <br>
+                  4. Respect staff and especially each other.
+                  <br>
+                  5. No raiding.
+                  <br>
+                  6. This server follows Discord's Community Guidelines. https://discordapp.com/guidelines
+                  <br>
+                  7. ‎No transphobic or homophobic behavior.
+                  <br>
+                  8. ‎Using the incorrect pronouns are grounds for a ban.
+                  <br>
+                  9. Use the provided channels appropriately.</p>
+              </div>
+              <div class="copyright">
+                  <h3>Follow me</h3>
+                  <ul class="icons">
+                      <li><a href="http://facebook.com/SafetyTrans/" class="icon"><img src="/images/facebook.png" style="height: 2em;"></a></li>
+                      <li><a href="https://discord.gg/KqKB5bN" class="icon"><img src="/images/discord_logo.png" style="height: 2em;"></a></li>
+                      &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>.
+                      </div>
+          </div>
+      </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

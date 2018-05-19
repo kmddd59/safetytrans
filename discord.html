@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<link rel="shortcut icon" href="/server.png">
+<link href="https://safetytrans.org/ios.png" rel="apple-touch-icon" />
+<link href="https://safetytrans.org/server2.png" rel="icon" sizes="192x192" />
+<link href="https://safetytrans.org/server1.png" rel="icon" sizes="128x128" />
+<link rel="mask-icon" href="https://safetytrans.org/ios.png">
+<meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name=apple-mobile-web-app-capable content=yes>
+            <meta name=apple-mobile-web-app-status-bar-style content=black>
+                <title>SafetyTrans</title>
+                <style>
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                #page {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border: 8px solid #FFF;
+                }
+                </style>
+                
+                <div id=page></div>
+                
+                <script>
+                    var page = document.getElementById('page'),
+                    ua = navigator.userAgent,
+                    iphone = ~ua.indexOf('iPhone') || ~ua.indexOf('iPod'),
+                    ipad = ~ua.indexOf('iPad'),
+                    ios = iphone || ipad,
+                    // Detect if this is running as a fullscreen app from the homescreen
+                    fullscreen = window.navigator.standalone,
+                    android = ~ua.indexOf('Android'),
+                    lastWidth = 0;
+                    
+                    if (android) {
+                        // Android's browser adds the scroll position to the innerHeight, just to
+                        // make this really fucking difficult. Thus, once we are scrolled, the
+                        // page height value needs to be corrected in case the page is loaded
+                        // when already scrolled down. The pageYOffset is of no use, since it always
+                        // returns 0 while the address bar is displayed.
+                        window.onscroll = function() {
+                            page.style.height = window.innerHeight + 'px'
+                        }
+                    }
+                var setupScroll = window.onload = function() {
+                    // Start out by adding the height of the location bar to the width, so that
+                    // we can scroll past it
+                    if (ios) {
+                        // iOS reliably returns the innerWindow size for documentElement.clientHeight
+                        // but window.innerHeight is sometimes the wrong value after rotating
+                        // the orientation
+                        var height = document.documentElement.clientHeight;
+                        // Only add extra padding to the height on iphone / ipod, since the ipad
+                        // browser doesn't scroll off the location bar.
+                        if (iphone && !fullscreen) height += 60;
+                        page.style.height = height + 'px';
+                    } else if (android) {
+                        // The stock Android browser has a location bar height of 56 pixels, but
+                        // this very likely could be broken in other Android browsers.
+                        page.style.height = (window.innerHeight + 56) + 'px'
+                    }
+                    // Scroll after a timeout, since iOS will scroll to the top of the page
+                    // after it fires the onload event
+                    setTimeout(scrollTo, 0, 0, 1);
+                };
+                (window.onresize = function() {
+                 var pageWidth = page.offsetWidth;
+                 // Android doesn't support orientation change, so check for when the width
+                 // changes to figure out when the orientation changes
+                 if (lastWidth == pageWidth) return;
+                 lastWidth = pageWidth;
+                 setupScroll();
+                 })();
+                    </script>
+<html>
+	<head>
+		<title>SafetyTrans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+   
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109255292-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-109255292-1');
+    </script>
+   
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="preview">
+				<div class="inner">
+					<div class="content">
+						<h1>SafetyTrans</h1>
+						<h2>A safe place for transgender and questioning
+						individuals.</h2>
+					</div>
+					<a href="index.html" class="button hidden"><span>Let's Go</span></a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="preview">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Discord Server</h2>
+						</header>
+						<p style="height:50em"><iframe src="https://titanembeds.com/embed/310081699478241290" height="98%" width="79%" frameborder="0" defaultchannel="312277220842405900" theme="DiscordDark"></iframe> <iframe src="https://discordapp.com/widget?id=310081699478241290&theme=dark" width="20%" height="98%" allowtransparency="true" frameborder="0"></iframe>
+</p>
+					</div>
+				</div>
+				<a href="IeatX.html" class="nav previous"><span class="fa fa-chevron-left"></span></a>
+				<a href="Allison.html" class="nav next"><span class="fa fa-chevron-right"></span></a>
+			</div>
+
+      <!-- Footer -->
+      <footer id="footer">
+          <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+          <div class="inner">
+              <div class="content">
+                  <h3>Server Rules</h3>
+                  <p>1. No spamming.
+                  <br>
+                  2. No DM advertising. This counts as harassment.
+                  <br>
+                  3. No gore/nsfw content in non-nsfw marked channels.
+                  <br>
+                  4. Respect staff and especially each other.
+                  <br>
+                  5. No raiding.
+                  <br>
+                  6. This server follows Discord's Community Guidelines. https://discordapp.com/guidelines
+                  <br>
+                  7. ‎No transphobic or homophobic behavior.
+                  <br>
+                  8. ‎Using the incorrect pronouns are grounds for a ban.
+                  <br>
+                  9. Use the provided channels appropriately.</p>
+              </div>
+              <div class="copyright">
+                  <h3>Follow me</h3>
+                  <ul class="icons">
+                      <li><a href="http://facebook.com/SafetyTrans/" class="icon"><img src="/images/facebook.png" style="height: 2em;"></a></li>
+                      <li><a href="https://discord.gg/KqKB5bN" class="icon"><img src="/images/discord_logo.png" style="height: 2em;"></a></li>
+                      &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>.
+                      </div>
+          </div>
+      </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
