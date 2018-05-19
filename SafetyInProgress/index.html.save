@@ -7,7 +7,12 @@
     
     gtag('config', 'UA-109255292-1');
     </script>
-<!DOCTYPE HTML>
+
+embed=discord.Embed(title="Safety Trans", url="https://safetytrans.org", description="A safe place for transgender and questioning individuals.")
+embed.set_author(name=SafetyTrans.org", url="https://safetytrans.org/Mae.html",, icon_url="https://safetytrans.org/server.png")
+embed.set_thumbnail(url="https://safetytrans.org/server.png")
+embed.set_footer(text="https://discord.gg/KqKB5bN")
+await self.bot.say(embed=embed)siii<!DOCTYPE HTML>
 <link rel="shortcut icon" href="/server.png">
 <link href="https://safetytrans.org/ios.png" rel="apple-touch-icon" />
 <link href="https://safetytrans.org/server2.png" rel="icon" sizes="192x192" />
@@ -120,13 +125,16 @@
                                 <div class="columns">
 								<!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
 									<div class="image front">
-										<a href="Allison.html"><img src="images/allison.png" alt="" /></a>
+										<a href="Allison.html"><img src="https://cdn.discordapp.com/avatars/336699354599522304/a583169d2296ebe696dff30021d19a8a.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="ImAWitch.html"><img src="images/ImAWitch.png" alt="" /></a>
+										<a href="FTMichael.html"><img src="https://cdn.discordapp.com/avatars/119153077247934467/81f90e12c1c1a5d9df8209aa3ccf8d89.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="WitchOfGlitch.html"><img src="images/glitch.png" alt="" /></a>
+										<a href="ImAWitch.html"><img src="https://cdn.discordapp.com/avatars/252694741920120832/696986e04fb1d79b504447ccc3417fa7.png?size=128" alt="" /></a>
+									</div>
+									<div class="image front">
+										<a href="WitchOfGlitch.html"><img src="https://cdn.discordapp.com/avatars/277542810058752000/0ab9fd5547c4152cacf13965b79d576b.png?size=128" alt="" /></a>
 									</div>
 
 								<!-- Column 2 (vertical, horizontal, vertical, horizontal) -->
@@ -134,32 +142,38 @@
 										<a href="Mae.html"><img src="images/pic05.jpg" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="Gab.html"><img src="images/gab.png" alt="" /></a>
+										<a href="Gab.html"><img src="https://cdn.discordapp.com/avatars/173577089763639296/6a88474a54feecc858101c57ffd7bece.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="Julie.html"><img src="images/julie.png" alt="" /></a>
+										<a href="Julie.html"><img src="https://cdn.discordapp.com/avatars/309179356977168384/1f4751013f73dbb40e54dcdb0290847a.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="Charles.html"><img src="images/charles.png" alt="" /></a>
+										<a href="Charles.html"><img src="https://cdn.discordapp.com/avatars/314819899908292608/a10e596fcd116197198646d9382b6804.png?size=128" alt="" /></a>
 									</div>
 
 								<!-- Column 3 (horizontal, vertical, horizontal, vertical) -->
 									<div class="image front">
-										<a href="Avery.html"><img src="images/avery.png" alt="" /></a>
+										<a href="Avery.html"><img src="https://cdn.discordapp.com/avatars/237915052236079104/c2cb2776f780305e36099c1cd8b57b4b.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="Fleur.html"><img src="images/fleur.gif" alt="" /></a>
+										<a href="Grace.html"><img src="https://cdn.discordapp.com/avatars/126243037016752128/d60fd8db1419b70a8c54ae6d106262fb.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="IeatX.html"><img src="images/IeatX.png" alt="" /></a>
+										<a href="Fleur.html"><img src="https://cdn.discordapp.com/avatars/79372133444104192/a_95eaccbed119f9b2e771146b1291384b.gif?size=128" alt="" /></a>
+									</div>
+									<div class="image front">
+										<a href="IeatX.html"><img src="https://cdn.discordapp.com/avatars/358649992208056330/885fda13b639a9976d2e856f26cb9d49.png?size=128" alt="" /></a>
 									</div>
 
 								<!-- Column 4 (vertical, horizontal, vertical, horizontal) -->
 									<div class="image front">
-										<a href="Blake.html"><img src="images/blake.png" alt="" /></a>
+										<a href="Blake.html"><img src="https://cdn.discordapp.com/avatars/285025910036627457/b4b3be587bc465fd100415c591a8770a.png?size=128" alt="" /></a>
 									</div>
 									<div class="image front">
-										<a href="Thea.html"><img src="images/thea.png" alt="" /></a>
+										<a href="Hannah.html"><img src="https://cdn.discordapp.com/avatars/157207863100571648/dd9364a63552ed2ca40ad51fd764a3d9.png?size=128" alt="" /></a>
+									</div>
+									<div class="image front">
+										<a href="Thea.html"><img src="https://cdn.discordapp.com/avatars/304250944554663936/90eb2f49624b7730496970c97a20470f.png?size=128" alt="" /></a>
 									</div>  
 									<div class="image front">
 										<a href="discord.html"><img src="/server1.png" alt="" /></a>
@@ -167,15 +181,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="fb-root"></div>
-                        <script>(function(d, s, id) {
-                                 var js, fjs = d.getElementsByTagName(s)[0];
-                                 if (d.getElementById(id)) return;
-                                 js = d.createElement(s); js.id = id;
-                                 js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-                                 fjs.parentNode.insertBefore(js, fjs);
-                                 }(document, 'script', 'facebook-jssdk'));</script>
-                        <div class="fb-comments" data-href="https://safetytrans.org" data-numposts="100"></div>
                         
                         <!-- Footer -->
                         <footer id="footer">
@@ -199,9 +204,7 @@
                                     <br>
                                     8. ‎Using the incorrect pronouns are grounds for a ban.
                                     <br>
-                                    9. Use the provided channels appropriately.
-                                    </p>
-                                    <h1><a href="questions.html"><strong>Server Requests and Questions</strong></a></h1>
+                                    9. Use the provided channels appropriately.</p>
                                 </div>
                                 <div class="copyright">
                                     <h3>Follow me</h3>
